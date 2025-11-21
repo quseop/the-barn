@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import {clashDisplay} from "@/app/fonts";
+import React from "react";
+import Image from "next/image";
+import {Tiktok} from "@/components/icons/tiktok";
+import {Instagram} from "@/components/icons/instagram";
+import FooterMenu from "@/components/blocks/footer-menu";
+import {NewsletterSignup} from "@/components/blocks/join-newsletter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +32,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${clashDisplay.variable} antialiased`}
       >
         {children}
+      <footer className="w-full">
+          <section className="flex w-full justify-between relative h-[90vh] py-10 px-[10%] bg-[#D9C4B3] flex-col gap-[-30px]">
+              <div className="flex gap-3 items-center">
+                  <p className="font-sans text-2xl text-[#4B2E2B]">Kafé™</p>
+                  <span className="text-[#4B2E2B]">|</span>
+                  <p className="font-sans text-lg text-[#4B2E2B]">Sip the calm of the coast.</p>
+                  <span className="text-[#4B2E2B]">|</span>
+                  <Tiktok />
+                  <Instagram />
+              </div>
+              <div className="flex gap-10">
+                  <FooterMenu />
+                  <NewsletterSignup />
+              </div>
+          </section>
+      </footer>
       </body>
     </html>
   );
