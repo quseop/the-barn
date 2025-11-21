@@ -8,6 +8,7 @@ import {Tiktok} from "@/components/icons/tiktok";
 import {Instagram} from "@/components/icons/instagram";
 import FooterMenu from "@/components/blocks/footer-menu";
 import {NewsletterSignup} from "@/components/blocks/join-newsletter";
+import {Header} from "@/components/blocks/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${clashDisplay.variable} antialiased`}
       >
+      <Header />
         {children}
       <footer className="w-full">
           <section className="flex w-full justify-between relative h-[90vh] py-10 px-[10%] bg-[#D9C4B3] flex-col gap-[-30px]">

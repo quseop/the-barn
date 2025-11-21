@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ProductCard() {
     return (
-        <div className="flex flex-col gap-3">
+        <div className="flex text-white flex-col gap-3">
             <div className="w-full relative rounded-md bg-[#D9C4B3] aspect-square">
                 <Image
                     fill
