@@ -7,25 +7,25 @@ import {ProductCard} from "@/components/cards/product-card";
 export default function Home() {
     return (
         <div className="flex min-h-screen flex-col items-center justify-between" style={{ backgroundColor: '#D9C4B3' }}>
-            {/*<div className="w-full h-[86vh] absolute">*/}
-            {/*    <LiquidEther*/}
-            {/*        colors={[ '#4B2E2B', '#D9C4B3', '#D9C4B3' ]}*/}
-            {/*        mouseForce={20}*/}
-            {/*        cursorSize={100}*/}
-            {/*        isViscous={false}*/}
-            {/*        viscous={30}*/}
-            {/*        iterationsViscous={32}*/}
-            {/*        iterationsPoisson={32}*/}
-            {/*        resolution={0.5}*/}
-            {/*        isBounce={false}*/}
-            {/*        autoDemo={true}*/}
-            {/*        autoSpeed={0.5}*/}
-            {/*        autoIntensity={2.2}*/}
-            {/*        takeoverDuration={0.25}*/}
-            {/*        autoResumeDelay={3000}*/}
-            {/*        autoRampDuration={0.6}*/}
-            {/*    />*/}
-            {/*</div>*/}
+            <div className="w-full h-[86vh] absolute">
+                <LiquidEther
+                    colors={[ '#4B2E2B', '#D9C4B3', '#D9C4B3' ]}
+                    mouseForce={20}
+                    cursorSize={100}
+                    isViscous={false}
+                    viscous={30}
+                    iterationsViscous={32}
+                    iterationsPoisson={32}
+                    resolution={0.5}
+                    isBounce={false}
+                    autoDemo={true}
+                    autoSpeed={0.5}
+                    autoIntensity={2.2}
+                    takeoverDuration={0.25}
+                    autoResumeDelay={3000}
+                    autoRampDuration={0.6}
+                />
+            </div>
 
 
             <div className="absolute top-90 right-10 w-[45%] aspect-square">
