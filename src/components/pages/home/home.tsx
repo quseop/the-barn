@@ -19,23 +19,6 @@ export default function Home() {
             <main className="w-full  flex  flex-col">
                 <section className="flex relative max-sm:items-center max-sm:h-[85vh] px-[10%] max-sm:px-[5%] max-sm:py-20 py-50 flex-col max-sm:gap-2 gap-5">
                     <div className="w-full h-full  inset-0 absolute">
-                        {/*<LiquidEther*/}
-                        {/*    colors={[ '#4B2E2B', '#D9C4B3', '#D9C4B3' ]}*/}
-                        {/*    mouseForce={20}*/}
-                        {/*    cursorSize={100}*/}
-                        {/*    isViscous={false}*/}
-                        {/*    viscous={30}*/}
-                        {/*    iterationsViscous={32}*/}
-                        {/*    iterationsPoisson={32}*/}
-                        {/*    resolution={0.5}*/}
-                        {/*    isBounce={false}*/}
-                        {/*    autoDemo={true}*/}
-                        {/*    autoSpeed={0.5}*/}
-                        {/*    autoIntensity={2.2}*/}
-                        {/*    takeoverDuration={0.25}*/}
-                        {/*    autoResumeDelay={3000}*/}
-                        {/*    autoRampDuration={0.6}*/}
-                        {/*/>*/}
                         <Image
                             fill
                             src={"/background/pastries.svg"}

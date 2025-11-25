@@ -37,7 +37,15 @@ export default function RootLayout({
       >
       <SecondHeader />
         {children}
-      <footer className="w-full">
+      <footer className="w-full relative">
+          <div className="max-md:hidden absolute top-[15%] z-10 right-30 w-[20%] aspect-[1248/933]">
+              <Image
+                  fill
+                  src={"/images/basket-two.png"}
+                  alt={"#"}
+                  className="object-cover"
+              />
+          </div>
           <section className="flex w-full justify-between relative gap-10 py-10 px-[10%] bg-[#D9C4B3] flex-col ">
               <div className="flex gap-3 max-sm:flex-col items-center">
                   <p className="text-2xl max-sm:text-4xl text-[#4B2E2B] font-dancing">TheBarn<span className="font-sans">™</span></p>
@@ -49,9 +57,9 @@ export default function RootLayout({
                       <Instagram />
                   </div>
               </div>
-              <div className="flex max-sm:flex-col gap-10">
+              <NewsletterSignup />
+              <div className="flex w-full max-sm:flex-col gap-10">
                   <FooterMenu />
-                  <NewsletterSignup />
               </div>
           </section>
       </footer>

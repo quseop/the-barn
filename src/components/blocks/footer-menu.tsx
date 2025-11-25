@@ -3,7 +3,7 @@ import React from "react";
 export default function FooterMenu() {
     return (
         <footer className="w-full items-center  flex gap-y-5 flex-col bg-[#d9c5b4]  font-clash">
-            <div className="flex text-center self-start max-sm:flex-col max-sm:items-center w-full items-start max-sm:gap-5 gap-20 border-b border-[#4B2E2B]/50 pb-10  text-[#4B2E2B]">
+            <div className="flex text-center lg:self-start max-sm:flex-col max-sm:items-center  items-start max-sm:gap-5 gap-20  pb-10  text-[#4B2E2B]">
                 {/* Location */}
                 <div>
                     <h3 className="font-semibold text-xl mb-3">Location</h3>
@@ -66,7 +66,7 @@ export default function FooterMenu() {
                     </ul>
                 </div>
             </div>
-            <p className="flex gap-5 font-clash text-[#4B2E2B]"> Sustainability     <span>•</span>     Payment Methods     <span>•</span>     Site Map </p>
+            <p className="flex max-sm:flex-col items-center gap-5 max-sm:gap-0 font-clash  text-[#4B2E2B]"> Sustainability     <span>•</span>     Payment Methods     <span>•</span>     Site Map </p>
         </footer>
     );
 }
