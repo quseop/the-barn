@@ -36,10 +36,10 @@ export default function Home() {
                     </p>
 
                     <div className="flex font-sans z-10 items-center gap-4">
-                        <Link href={"#"} className="max-sm:text-xs  rounded-full max-sm:px-6 max-sm:py-2.5 text-white drop-shadow-2xl text-sm p-3 px-8 bg-[#4B2E2B]">
+                        <Link href={"/menu"} className="max-sm:text-xs  rounded-full max-sm:px-6 max-sm:py-2.5 text-white drop-shadow-2xl text-sm p-3 px-8 bg-[#4B2E2B]">
                             Our Menu
                         </Link>
-                        <Link href={"#"} className="border max-sm:text-xs  max-sm:px-5 max-sm:py-2 px-8 py-2 rounded-full text-[#4B2E2B] border-[#4B2E2B]">
+                        <Link href={"/gallery"} className="border max-sm:text-xs  max-sm:px-5 max-sm:py-2 px-8 py-2 rounded-full text-[#4B2E2B] border-[#4B2E2B]">
                             View Gallery
                         </Link>
                     </div>

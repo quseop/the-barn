@@ -1,8 +1,6 @@
 "use client"
 
-import { ShoppingCart } from "lucide-react";
 import Link from "next/link";
-import {CartSheet} from "@/components/pages/cart/cart-sheet";
 import React from "react";
 import { useState } from "react";
 
@@ -45,9 +43,9 @@ export  function SecondHeader() {
             <div className="max-w-7xl mx-auto flex items-center justify-between py-2 px-5">
 
                 {/* Logo */}
-                <h1 className="text-xl text-[#4B2E2B] font-bold font-dancing">
+                <Link href={"/"} className="text-xl text-[#4B2E2B] font-bold font-dancing">
                     TheBarn<span className="font-normal font-sans">™</span>
-                </h1>
+                </Link>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex font-clash text-[#4B2E2B] tracking-tight items-center gap-6 text-sm">
@@ -57,7 +55,7 @@ export  function SecondHeader() {
                     <Link href="/gallery" className="hover:opacity-70">Our Gallery</Link>
                     <span className="text-black">|</span>
 
-                    <Link href="#" className="hover:opacity-70">News</Link>
+                    <Link href={"/news"} className="hover:opacity-70">News</Link>
                 </nav>
 
                 {/* Contact (Desktop) */}
@@ -82,7 +80,7 @@ export  function SecondHeader() {
         ">
                     <Link href="#" className="hover:opacity-70">About us</Link>
                     <Link href="/gallery" className="hover:opacity-70">Our Gallery</Link>
-                    <Link href="#" className="hover:opacity-70">News</Link>
+                    <Link href={"/news"} className="hover:opacity-70">News</Link>
                     <Link href="#" className="hover:opacity-70">Contact Us</Link>
                 </div>
             )}

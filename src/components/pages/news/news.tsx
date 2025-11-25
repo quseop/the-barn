@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {ComingSoon} from "@/components/blocks/coming-soon";
 
-export default function Gallery() {
+export default function News() {
     return (
         <div className="flex w-full  flex-col items-center justify-between" style={{ backgroundColor: '#fff' }}>
 
