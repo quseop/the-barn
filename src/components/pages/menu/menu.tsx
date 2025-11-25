@@ -4,8 +4,6 @@ import Link from "next/link";
 export default function Menu() {
     return (
         <div className="flex w-full min-h-screen flex-col items-center justify-between" style={{ backgroundColor: '#fff' }}>
-
-
             <main className="w-full  flex  flex-col">
                 <section className="flex relative px-[10%] max-sm:px-[5%] pt-50 flex-col gap-5">
                     <div className="w-full h-full inset-0 absolute">

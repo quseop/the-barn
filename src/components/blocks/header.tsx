@@ -75,7 +75,7 @@ export  function SecondHeader() {
             {/* Mobile Dropdown */}
             {open && (
                 <div className="
-          md:hidden mt-3 bg-white/60 backdrop-blur-md border border-[#4B2E2B]
+          md:hidden mt-3 bg-white/60 backdrop-blur-md border font-clash border-[#4B2E2B]
           rounded-2xl p-2 flex flex-col gap-4 text-[#4B2E2B]
         ">
                     <Link href="#" className="hover:opacity-70">About us</Link>
