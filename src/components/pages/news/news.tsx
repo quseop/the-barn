@@ -7,7 +7,7 @@ export default function News() {
 
 
             <main className="w-full  flex  flex-col">
-                <section className="flex relative px-[10%] py-50 flex-col gap-5">
+                <section className="flex relative px-[10%] max-sm:px-[5%] py-20 flex-col gap-5">
                     <div className="w-full h-full inset-0 absolute">
                         <Image
                             fill
@@ -17,7 +17,7 @@ export default function News() {
                         />
                     </div>
                     <h1 className="text-8xl z-10 max-sm:text-5xl font-semibold font-clash text-[#4B2E2B]">
-                        Become part of this Family <br /> <span className="font-dancing">Visit us at The Barn.</span>
+                        Stay up-to-date <br /> <span className="font-dancing">The Barn News.</span>
                     </h1>
                     <p className="font-clash z-10 text-2xl text-[#4B2E2B]">
 
