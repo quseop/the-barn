@@ -47,7 +47,7 @@ export default function Gallery() {
                     <div className="w-full relative aspect-[604/466]">
                         <Image
                             fill
-                            src={"/images/cookies.svg"}
+                            src={"/images/kookies.png"}
                             alt={"#"}
                             className="object-cover rounded-md"
                         />
