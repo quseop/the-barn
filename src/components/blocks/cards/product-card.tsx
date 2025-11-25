@@ -1,29 +1,24 @@
 import Image from "next/image";
 
-export function ProductCard() {
+export function ProductCard({color, image}:{color: string, image: string}) {
     return (
-        <div className="flex text-white flex-col gap-3">
-            <div className="w-full relative rounded-md bg-[#D9C4B3] aspect-square">
-                <Image
-                    fill
-                    src={"/images/cape-latte.png"}
+        <div className={`flex text-[#4B2E2B] p-5 bg-[${color}]/90 rounded-4xl border-[#4B2E2B] border flex-col gap-3`}>
+            <div className="w-full relative rounded-md  aspect-square">
+                <img
+                    // fill
+                    src={image}
                     alt={"#"}
-                    className="absolute  scale-90 object-cover"
+                    className="absolute object-cover"
                 />
             </div>
-            <p className="text-4xl font-clash">
-                Cape Latte
-            </p>
-            <p className="text-lg font-sans">
-                Rich espresso with silky steamed milk.
-            </p>
-            <p className="font-medium font-sans text-3xl">
-                R45
-            </p>
-            <button className="border text-lg border-white rounded-full self-start px-6 py-2 font-sans text-white">
-                Add to cart
-            </button>
-
+            <div className="flex gap-5 justify-between px-2 items-center">
+                <p className="text-2xl font-medium font-clash">
+                    Chai Latte
+                </p>
+                <p className="font-medium font-sans text-xl">
+                    R45
+                </p>
+            </div>
         </div>
     )
 }

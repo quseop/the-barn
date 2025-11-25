@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {clashDisplay} from "@/app/fonts";
+import {clashDisplay, dancingScript} from "@/app/fonts";
 import React from "react";
 import Image from "next/image";
 import {Tiktok} from "@/components/icons/tiktok";
 import {Instagram} from "@/components/icons/instagram";
 import FooterMenu from "@/components/blocks/footer-menu";
 import {NewsletterSignup} from "@/components/blocks/join-newsletter";
-import {Header} from "@/components/blocks/header";
+import {Header, SecondHeader} from "@/components/blocks/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,21 +33,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${clashDisplay.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${clashDisplay.variable} ${dancingScript.variable} flex  flex-col items-center antialiased`}
       >
-      <Header />
+      <SecondHeader />
         {children}
       <footer className="w-full">
-          <section className="flex w-full justify-between relative h-[90vh] py-10 px-[10%] bg-[#D9C4B3] flex-col gap-[-30px]">
-              <div className="flex gap-3 items-center">
-                  <p className="font-sans text-2xl text-[#4B2E2B]">Kafé™</p>
-                  <span className="text-[#4B2E2B]">|</span>
-                  <p className="font-sans text-lg text-[#4B2E2B]">Sip the calm of the coast.</p>
-                  <span className="text-[#4B2E2B]">|</span>
-                  <Tiktok />
-                  <Instagram />
+          <section className="flex w-full justify-between relative gap-10 py-10 px-[10%] bg-[#D9C4B3] flex-col ">
+              <div className="flex gap-3 max-sm:flex-col items-center">
+                  <p className="text-2xl max-sm:text-4xl text-[#4B2E2B] font-dancing">TheBarn<span className="font-sans">™</span></p>
+                  <span className="text-[#4B2E2B] max-sm:hidden ">|</span>
+                  <p className="font-sans text-[#4B2E2B]">Crafted to Comfort. Served to Satisfy.</p>
+                  <span className="text-[#4B2E2B] max-sm:hidden">|</span>
+                  <div className="flex gap-3">
+                      <Tiktok />
+                      <Instagram />
+                  </div>
               </div>
-              <div className="flex gap-10">
+              <div className="flex max-sm:flex-col gap-10">
                   <FooterMenu />
                   <NewsletterSignup />
               </div>
