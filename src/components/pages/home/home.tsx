@@ -26,6 +26,10 @@ export default function Home() {
                             className="object-cover opacity-20"
                         />
                     </div>
+
+                    <p className="font-clash font-medium max-sm:text-center max-sm:text-sm z-10 text-2xl text-[#4B2E2B]">
+                        Unit 9A Rondebosch Village, Rondebosch
+                    </p>
                     <h1 className="text-8xl max-sm:text-center z-10 max-sm:text-5xl font-semibold font-clash text-[#4B2E2B]">
                         Craving something real? <br className={"max-sm:hidden"} /> Step into <br className={"max-sm:inline hidden"} />
                         <span className="font-dancing max-sm:text-5xl">The Barn.</span>
