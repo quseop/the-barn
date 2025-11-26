@@ -8,7 +8,7 @@ export default function Gallery() {
 
 
             <main className="w-full  flex  flex-col">
-                <section className="flex relative px-[10%] py-50 flex-col gap-5">
+                <section className="flex relative px-[10%] pt-50 pb-10 flex-col gap-5">
                     <div className="w-full h-full inset-0 absolute">
                         <Image
                             fill
