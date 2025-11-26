@@ -37,7 +37,7 @@ export default function Gallery() {
                     {/*</div>*/}
                 </section>
 
-                <section className="w-full mb-50 flex py-10 min-h-screen pb-40 max-sm:grid-cols-1 grid-cols-3  px-[10%] max-sm:px-[0%] bg-white gap-10">
+                <section className="w-full mb-50  flex py-10 min-h-screen pb-40 max-sm:grid-cols-1 grid-cols-3  px-[10%] max-sm:px-[2%] bg-white gap-10">
                     <MasonryGallery />
                 </section>
 
