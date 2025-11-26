@@ -11,7 +11,7 @@ export default function Gallery() {
 
 
             <main className="w-full  flex  flex-col">
-                <section className="flex relative px-[10%] pt-50 pb-10 flex-col gap-5">
+                <section className="flex relative px-[10%] pt-50 max-sm:pt-20 pb-10 flex-col gap-5">
                     <div className="w-full h-full inset-0 absolute">
                         <Image
                             fill
@@ -20,8 +20,8 @@ export default function Gallery() {
                             className="object-cover opacity-20"
                         />
                     </div>
-                    <h1 className="text-8xl z-10 max-sm:text-5xl font-semibold font-clash text-[#4B2E2B]">
-                        Become part of this Family <br /> <span className="font-dancing">Visit us at The Barn.</span>
+                    <h1 className="text-8xl z-10 max-sm:text-center max-sm:text-5xl font-semibold font-clash text-[#4B2E2B]">
+                        Become part of this Family <br /> <span className="font-dancing">Visit us at <br className="max-sm:block hidden" /> The Barn.</span>
                     </h1>
                     <p className="font-clash z-10 text-2xl text-[#4B2E2B]">
 
@@ -37,7 +37,7 @@ export default function Gallery() {
                     {/*</div>*/}
                 </section>
 
-                <section className="w-full  flex py-10 min-h-screen pb-40 max-sm:grid-cols-1 grid-cols-3  px-[10%] max-sm:px-[0%] bg-white gap-10">
+                <section className="w-full mb-50 flex py-10 min-h-screen pb-40 max-sm:grid-cols-1 grid-cols-3  px-[10%] max-sm:px-[0%] bg-white gap-10">
                     <MasonryGallery />
                 </section>
 

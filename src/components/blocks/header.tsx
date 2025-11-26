@@ -39,8 +39,8 @@ export  function SecondHeader() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className={ ` ${!open && 'border'} w-[90vw] mt-4  border-[#4B2E2B] rounded-full max-w-7xl z-30 fixed backdrop-blur-sm p-1 left-1/2 -translate-x-1/2`}>
-            <div className="max-w-7xl mx-auto flex items-center justify-between py-2 px-5">
+        <header className={` w-[90vw] mt-4   md:backdrop-blur-sm rounded-full max-w-7xl z-30  fixed   left-1/2 -translate-x-1/2`}>
+            <div className="max-w-7xl mx-auto backdrop-blur-sm flex border border-[#4B2E2B] items-center rounded-full justify-between py-3 px-6">
 
                 {/* Logo */}
                 <Link href={"/"} className="text-xl text-[#4B2E2B] font-bold font-dancing">
