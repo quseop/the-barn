@@ -59,7 +59,7 @@ export  function SecondHeader() {
                 </nav>
 
                 {/* Contact (Desktop) */}
-                <Link href="#" className="hidden md:block hover:opacity-70 font-clash">
+                <Link href="/contact" className="hidden md:block hover:opacity-70 font-clash">
                     Contact Us
                 </Link>
 
@@ -81,7 +81,7 @@ export  function SecondHeader() {
                     <Link href="#" className="hover:opacity-70">About us</Link>
                     <Link href="/gallery" className="hover:opacity-70">Our Gallery</Link>
                     <Link href={"/news"} className="hover:opacity-70">News</Link>
-                    <Link href="#" className="hover:opacity-70">Contact Us</Link>
+                    <Link href="/contact" className="hover:opacity-70">Contact Us</Link>
                 </div>
             )}
         </header>

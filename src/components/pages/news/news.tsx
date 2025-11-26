@@ -8,7 +8,7 @@ export default function News() {
 
 
             <main className="w-full  flex  flex-col">
-                <section className="flex relative px-[10%]  max-sm:px-[5%] py-[10%_4%] flex-col gap-5">
+                <section className="flex relative px-[10%]  max-sm:px-[5%] max-sm:py-20 py-[10%_4%] flex-col gap-5">
                     <div className="w-full h-full inset-0 absolute">
                         <Image
                             fill

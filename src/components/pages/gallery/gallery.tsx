@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {ComingSoon} from "@/components/blocks/coming-soon";
+import Link from "next/link";
 
 export default function Gallery() {
     return (
@@ -33,9 +34,39 @@ export default function Gallery() {
                     {/*</div>*/}
                 </section>
 
-                <section className="w-full relative px-[10%] bg-white gap-10">
-                    <div className="w-full flex justify-between flex-col font-clash relative">
-                        <ComingSoon />
+                <section className="w-full grid py-10 pb-40 max-sm:grid-cols-1 grid-cols-3 relative px-[10%] max-sm:px-[5%] bg-white gap-10">
+                    <div className="border relative flex-col gap-4 flex w-full p-4 py-7 rounded-2xl border-[#4B2E2B]">
+                        <div className="w-full h-full inset-0 absolute">
+                            <Image
+                                fill
+                                src={"/background/pastries.svg"}
+                                alt={"#"}
+                                className="object-cover opacity-20"
+                            />
+                        </div>
+                        <Image height={400} width={400} src={"/news/rest.png"} alt={"#"} className="w-full z-20 origin-top  aspect-[16/10] rounded object-cover" />
+                    </div>
+                    <div className="border relative flex-col gap-4 flex w-full p-4 py-7 rounded-2xl border-[#4B2E2B]">
+                        <div className="w-full h-full inset-0 absolute">
+                            <Image
+                                fill
+                                src={"/background/pastries.svg"}
+                                alt={"#"}
+                                className="object-cover opacity-20"
+                            />
+                        </div>
+                        <Image height={400} width={400} src={"/news/rest.png"} alt={"#"} className="w-full z-20 origin-top  aspect-[16/10] rounded object-cover" />
+                    </div>
+                    <div className="border relative flex-col gap-4 flex w-full p-4 py-7 rounded-2xl border-[#4B2E2B]">
+                        <div className="w-full h-full inset-0 absolute">
+                            <Image
+                                fill
+                                src={"/background/pastries.svg"}
+                                alt={"#"}
+                                className="object-cover opacity-20"
+                            />
+                        </div>
+                        <Image height={400} width={400} src={"/news/rest.png"} alt={"#"} className="w-full z-20 origin-top  aspect-[16/10] rounded object-cover" />
                     </div>
 
                 </section>
