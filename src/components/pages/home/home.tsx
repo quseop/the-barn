@@ -2,6 +2,7 @@ import LiquidEther from "@/components/reactbits/liquid-ether";
 import Link from "next/link";
 import Image from "next/image";
 import {ProductCard} from "@/components/blocks/cards/product-card";
+import RotatingText from "@/components/RotatingText";
 
 
 export default function Home() {
@@ -60,9 +61,21 @@ export default function Home() {
                 </section>
                 <section className="w-full flex justify-center border-y border-[#4B2E2B] bg-[#D9C4B3]">
                     <div className="flex  w-full pt-30 py-20 px-[10%]  flex-col max-sm:gap-4 gap-10">
-                        <h2 className="text-5xl max-sm:text-3xl font-medium max-sm:text-center font-clash text-[#4B2E2B]">
-                            A Basket Full of Comfort
-                        </h2>
+                        <div className="flex font-medium max-sm:flex-col text-[#4B2E2B] text-5xl max-md:text-2xl font-clash items-center gap-x-2">
+                            A Basket Full Of
+                            <RotatingText
+                                texts={['Comfort','Freshness', 'Love']}
+                                mainClassName="  font-clash font-medium text-[#4B2E2B] bg-transparent  text-black overflow-hidden  md:py-2 justify-center rounded-lg"
+                                staggerFrom={"last"}
+                                initial={{ y: "100%" }}
+                                animate={{ y: 0 }}
+                                exit={{ y: "-120%" }}
+                                staggerDuration={0.025}
+                                splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                                transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                                rotationInterval={3000}
+                            />
+                        </div>
                         <p className="font-clash max-sm:text-lg max-sm:leading-5 max-sm:text-center text-2xl text-[#4B2E2B]">
                             Discover the treats Cape Town keeps coming back for. <br /> Simple ingredients, unforgettable flavours.
                         </p>
