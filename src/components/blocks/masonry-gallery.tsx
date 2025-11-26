@@ -27,12 +27,7 @@ export const MasonryGallery = () => {
             url: "/gallery/4.png",
             height: 400,
         },
-        {
-            id: "5",
-            img: "/gallery/6.png",
-            url: "/gallery/6.png",
-            height: 600,
-        },
+
         {
             id: "6",
             img: "/gallery/7.png",
