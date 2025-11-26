@@ -9,6 +9,7 @@ import {Instagram} from "@/components/icons/instagram";
 import FooterMenu from "@/components/blocks/footer-menu";
 import {NewsletterSignup} from "@/components/blocks/join-newsletter";
 import {Header, SecondHeader} from "@/components/blocks/header";
+import {Analytics} from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${clashDisplay.variable} ${dancingScript.variable} flex  flex-col items-center antialiased`}
       >
+      <Analytics />
       <SecondHeader />
         {children}
       <footer className="w-full relative">
