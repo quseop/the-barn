@@ -95,7 +95,7 @@ export function Contact() {
                                 Talk to our team.
                             </h3>
                             <p className="text-[#333] max-md:text-lg py-5">
-                                Book a call with our team, and let us know we can help</p>
+                                Book a call with our team, and let us know, how we can help you.</p>
                             <div className="w-full relative">
                                 <div className="max-sm:hidden absolute  w-80 aspect-[1248/933]">
                                     <Image
