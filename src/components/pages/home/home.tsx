@@ -59,7 +59,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="w-full flex justify-center border-y border-[#4B2E2B] bg-[#D9C4B3]">
-                    <div className="flex  w-full py-20 px-[10%]  flex-col max-sm:gap-4 gap-10">
+                    <div className="flex  w-full pt-30 py-20 px-[10%]  flex-col max-sm:gap-4 gap-10">
                         <h2 className="text-5xl max-sm:text-3xl font-medium max-sm:text-center font-clash text-[#4B2E2B]">
                             A Basket Full of Comfort
                         </h2>
