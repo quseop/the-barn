@@ -37,21 +37,9 @@ export default function Gallery() {
                     {/*</div>*/}
                 </section>
 
-                <section className="w-full mb-50  flex py-10 min-h-screen pb-40 max-sm:grid-cols-1 grid-cols-3  px-[10%] max-sm:px-[2%] bg-white gap-10">
+                <section className="w-full relative flex py-10 min-h-screen  max-sm:grid-cols-1 grid-cols-3  px-[10%] max-sm:px-[2%] bg-white gap-10">
                     <MasonryGallery />
                 </section>
-
-
-                {/*<section className="flex w-full items-center py-50 px-[10%] bg-[#4B2E2B] flex-col gap-10">*/}
-                {/*    <h2 className="text-4xl font-medium font-clash text-white">*/}
-                {/*        Shop some of our all time bests...*/}
-                {/*    </h2>*/}
-                {/*    <div className="w-full max-w-7xl grid grid-cols-3 gap-10">*/}
-                {/*        <ProductCard />*/}
-                {/*        <ProductCard />*/}
-                {/*        <ProductCard />*/}
-                {/*    </div>*/}
-                {/*</section>*/}
 
             </main>
         </div>
